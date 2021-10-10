@@ -12,21 +12,13 @@
 <body>
 
   <header>
-    <a class="header-logo" href="">LOGO</a>
+    <h2 class="header-logo">LOGO</h2>
     <nav>
-      <ul>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#service">Service</a>
-        </li>
-        <li>
-          <a href="#portafolio">Portafolio</a>
-        </li>
-        <li>
-          <a href="#contacto">Contacto</a>
-        </li>
+      <ul class="ul">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -38,22 +30,26 @@
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
         <br>
-        <img src="./image/imagen1.png" alt="Imagen-1">
-        <img src="./image/imagen2.png" alt="Imagen-2">
-        <img src="./image/imagen3.png" alt="Imagen-3">
+        <div>
+          <img src="./image/imagen1.png" alt="Imagen-1">
+          <img src="./image/imagen2.png" alt="Imagen-2">
+          <img src="./image/imagen3.png" alt="Imagen-3">
+        </div>
     </section>
     <section>
       <br>
-      <h2 class="servicios">SERVICIOS</h2>
+      <h2 class="services">SERVICIOS</h2>
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
         <br>
-        <img src="./image/imagen4.png" alt="Imagen-4">
-        <img src="./image/imagen5.png" alt="Imagen-5">
-        <img src="./image/imagen6.png" alt="Imagen-6">
-        <ul>
+        <div>
+          <img src="./image/imagen4.png" alt="Imagen-4">
+          <img src="./image/imagen5.png" alt="Imagen-5">
+          <img src="./image/imagen6.png" alt="Imagen-6">
+        </div>
+        <ul class="service-ul">
           <li>Servicio uno</li>
           <li>Servicio dos</li>
           <li>Servicio tres</li>
@@ -62,16 +58,18 @@
     </section>
     <section>
       <br>
-      <h2 class="portafolio">PORTAFOLIO</h2>
+      <h2 class="briefcase">PORTAFOLIO</h2>
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
         <br>
-        <img src="./image/imagen7.png" alt="Imagen-7">
-        <img src="./image/imagen8.png" alt="Imagen-8">
-        <img src="./image/imagen9.png" alt="Imagen-9">
-        <ul>
+        <div>
+          <img src="./image/imagen7.png" alt="Imagen-7">
+          <img src="./image/imagen8.png" alt="Imagen-8">
+          <img src="./image/imagen9.png" alt="Imagen-9">
+        </div>
+        <ul class="briefcase-ul">
           <li>Servicio uno</li>
           <li>Servicio dos</li>
           <li>Servicio tres</li>
@@ -84,10 +82,10 @@
       <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
       <br>
-      <input name="name" type="text" placeholder="Nombre y Apellido" required minlength="50"/>
-      <input name="detalle" type="text" placeholder="Detalle" required minlength="500"/>
-      <div>
-        <button>ENVIAR</button>
+      <input class="name" name="name" type="text" placeholder="Nombre y Apellido" required minlength="50"/>
+      <textarea class="detail" name="detalle" type="text" placeholder="Detalle" required minlength="500"></textarea>
+      <div class="button">
+        <button>Enviar</button>
       </div>
     </section>
   </main>

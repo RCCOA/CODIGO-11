@@ -1,0 +1,145 @@
+/* Generales */
+body{
+
+  font-family: arial;
+  /*width: 1440px;*/
+}
+
+/* HEADER */
+header{
+  background: #00AF1C;
+  padding: 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.header-logo{
+  color:#FFFFFF;
+  font-weight: 700;
+  font-size: 32px;
+ }
+
+.ul{
+  display: flex;
+  justify-content: center;
+ }
+
+ header a{
+  padding: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  color:#FFFFFF;
+  cursor: pointer;
+ }
+
+/* MAIN */
+main{
+  margin-left: 20px;
+}
+main h2{
+  font-size: 24px;
+  font-style: bold;
+  font-weight: 700;
+  margin-top: 30px;
+}
+/* COLORES PARA LOS SUBTITULOS */
+main .home{
+  color:#3B06D2;
+}
+
+main .services{
+  color:#D206B2;
+}
+
+main .briefcase{
+  color:#AAD206;
+}
+
+main .contacto{
+  color:#06D2C6;
+}
+
+/* MARGENES PARA LOS PARRAFOS */
+main p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+/* MARGEN Y PADDIONG PARA LOS GRAFICOS */
+main img{
+ margin-right: 20px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+/* PARA LA LISTA DE SERVICIOS */
+main li{
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.service-ul li:nth-child(1) {
+  color: red;
+}
+.service-ul li:nth-child(2) {
+  color: blue;
+}
+.service-ul li:nth-child(3) {
+  color: goldenrod;
+}
+.service-ul li:nth-child(4) {
+  color: lightblue;
+}
+
+.briefcase-ul li:nth-child(1){
+  color:goldenrod;
+}
+.briefcase-ul li:nth-child(2){
+  color:brown;
+}
+.briefcase-ul li:nth-child(3){
+  color:#3B06D2;
+}
+.briefcase-ul li:nth-child(4){
+  color:green;
+}
+
+main .name{
+display: block;
+width: 97.5%;
+height: 50px;
+padding-left:20PX;
+margin-bottom: 20px;;
+}
+
+main .detail{
+  font-family: arial;
+  padding-top: 20px;
+  padding-left:20PX;
+  width: 97.5%;
+  height: 300px;
+}
+
+button{
+padding: 20px;
+margin-top: 20px;
+margin-bottom: 167px;
+border-color: #22A900;
+color: #22A900;
+width: 10%;
+font-size: 22px;
+}
+
+/* FOOTER */
+footer{
+  background: #00AF1C;
+  color:#FFFFFF;
+  Size:24px;
+  padding: 20px;
+  display: flex;
+  justify-content:space-between;
+}
