@@ -1,0 +1,110 @@
+body{
+  font-family: arial;
+  width: 600px;
+  margin: auto;
+  background-color:white;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 3px solid black;
+  }
+
+html{
+  background-color: lightblue;
+  }
+
+/* HEADER */
+header{
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 36px;
+  border-radius: 15px;
+}
+
+/* MAIN */
+.email{
+  text-align: center;
+  padding: 20px;
+  line-height: 24px;
+  font-size: 19px;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 55px;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  padding: 20px;
+  line-height: 25px;
+
+}
+
+section div{
+  margin:15px 10px;
+
+}
+h3{
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+}
+p{
+  margin-top:20px;
+}
+
+button{
+  margin: 15px auto;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  background-color: transparent;
+}
+
+.text{
+  font-size: 18px;
+  padding: 30px;
+}
+hr{
+  background-color: black;
+  width: 80%;
+  height: 2px;
+  margin: 50px auto;
+}
+
+/* FOOTER */
+
+footer{
+  text-align: center;
+  font-size: 15px;
+  line-height: 3px;
+  vertical-align: baseline;
+
+}
+
+.icons {
+
+  display: flex;
+  justify-content:space-evenly;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  cursor: pointer;
+
+}
+
+h4{
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
