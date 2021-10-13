@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODELO DE CAJA</title>
+  <style>
+    *{
+      box-sizing: border-box; /* con esto se mantien la dimemsion    que deseas al inicio */
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: arial;
+    }
+
+    .wrapper{
+      max-width: 440px;
+      background: red;
+      background-image: url('./image/perro-1.png');
+      background-image: url('./image/startransparent.gif');
+      background-repeat: no-repeat;
+      background-position: center center;
+      /*background-repeat: repeat-x;*/
+      padding: 40px 20px 20px 50px; /*arriba, derecha, abajo, izquierda*/
+      border: 10px solid orange;
+      margin: 0 auto 50px;
+      overflow: scroll;/*para que entre informacion en una caja,  AUTO para que se genere de manera automatica cuando es desasiado grande*/
+    }
+
+    h1{
+      text-align: center; /* left, right, center, justify */
+      display: inline;
+      visibility: visible; /* visible - hiddern */
+    }
+
+    a{
+      display: none; /*block, inline, none*/
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>TITULO</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempore alias ad reiciendis, repellendus eveniet excepturi, corporis consequatur vel quasi consectetur soluta dolores veniam ut et tenetur ex consequuntur? Quibusdam!</p>
+    <div>
+      <h2>TITULO H2</h2>
+      <p>Lorem, ipsum, d</p>
+      <a href="">link</a>
+      <a href="">link</a>
+    </div>
+    <div>
+      <h2>TITULO H2</h2>
+      <p>Lorem, ipsum, d</p>
+      <a href="">link</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <h1>TITULO</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempore alias ad reiciendis, repellendus eveniet excepturi, corporis consequatur vel quasi consectetur soluta dolores veniam ut et tenetur ex consequuntur? Quibusdam!</p>
+    <div>
+      <h2>TITULO H2</h2>
+      <p>Lorem, ipsum, d</p>
+      <a href="">link</a>
+      <a href="">link</a>
+    </div>
+    <div>
+      <h2>TITULO H2</h2>
+      <p>Lorem, ipsum, d</p>
+      <a href="">link</a>
+    </div>
+  </div>
+
+  <style>
+    p {
+      margin-bottom: 20px;
+    }
+    p span {
+      background: yellow;
+      margin-bottom: 20px;
+      /* display:block; */
+    }
+
+    p span {
+      display: inline-block;
+    }
+  </style>
+  <div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, explicabo sequi magnam incidunt perferendis et!<span>Lorem ipsum dolor sit amet.</span></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, explicabo sequi magnam incidunt perferendis et!<span>Lorem ipsum dolor sit amet.</span></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, explicabo sequi magnam incidunt perferendis et!<span>Lorem ipsum dolor sit amet.</span></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, explicabo sequi magnam incidunt perferendis et!<span>Lorem ipsum dolor sit amet.</span></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, explicabo sequi magnam incidunt perferendis et!<span>Lorem ipsum dolor sit amet.</span></p>
+  </div>
+</body>
+</html>
