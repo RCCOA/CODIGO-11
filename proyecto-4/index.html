@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto-4</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 1453;
+      width: 1024;
+      max-width: 1024px;
+      font-family: arial;
+      font-style: bold;
+      background-color: coral;
+    }
+
+    /*HEADER*/
+    header {
+      display: flex;
+      justify-content: space-between;
+      background: white;
+      padding: 20px;
+    }
+    .ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+    }
+
+    header a {
+      padding: 10px;
+      text-decoration: none;
+      max-width: 100%;
+      height: auto;
+      color:black;
+      cursor: pointer;
+      text-align: center;
+      }
+
+    /*BUSCADOR*/
+    .inner-addon {
+       position: relative;
+       padding-bottom: 20px;
+     }
+
+    .inner-addon .glyphicon {
+      position: absolute;
+      padding: 10px;
+      pointer-events: none;
+      right: 0px;
+    }
+
+    /* MAIN*/
+    main {
+      padding: 20px 52px 20px 52px;
+    }
+
+    .angular {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    .angular .capa1 {
+      position: absolute;
+      height: 346px;
+      width: 507px;
+    }
+
+    .angular .capa2 {
+      position: relative;
+      height: 346px;
+      width: 507px;
+      color: white;
+      text-align:left;
+      padding-left: 13px;
+      padding-right: 10px;
+    }
+
+    .front-end {
+      margin: 10px 0px 0px 399px;
+      font-size: 12px;
+      width: 78px;
+      height: 30px;
+      padding: 5px 3px 5px 3px;
+      background-color: #AD195A;
+      border-radius: 8px;
+    }
+
+    .autor {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px 0px 3px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 0px;
+    }
+
+    p {
+      font-size: 11px;
+      margin-top: 10px;
+    }
+
+    .todos {
+      font-size: 22px;
+      margin-left: 65px;
+      margin-top: 40px;
+      margin-bottom: 24px;
+      font-family:'Lucida Sans';
+    }
+
+
+   .python-cap1 {
+      position: absolute;
+      width: 393px;
+      height: 102px;
+    }
+
+    .python-cap2 {
+      position: relative;
+      width: 393px;
+      height: 102px;
+      color: white;
+      text-align:left;
+      padding-left: 13px;
+      padding-right: 10px;
+    }
+
+    .python-back-end {
+      margin: 7px 0px 0px 310px;
+      font-size: 11px;
+      width: 62px;
+      height: 24px;
+      background-color: #26A6BE;
+      border-radius: 8px;
+    }
+
+
+
+
+
+
+
+    .react-cap1 {
+      position: absolute;
+      width: 393px;
+      height: 102px;
+    }
+
+    .react-cap2 {
+      position: relative;
+      width: 393px;
+      height: 102px;
+      color: white;
+      text-align:left;
+      padding-left: 13px;
+      padding-right: 10px;
+    }
+
+    .react-front-end {
+      margin: 7px 0px 0px 308px;
+      font-size: 11px;
+      width: 64px;
+      height: 24px;
+      background-color: #AD195A;
+      border-radius: 8px;
+    }
+
+
+
+
+
+
+    .amazon-cap1 {
+      position: absolute;
+      width: 393px;
+      height: 102px;
+    }
+
+    .amazon-cap2 {
+      position: relative;
+      width: 393px;
+      height: 102px;
+      color: white;
+      text-align:left;
+      padding-left: 13px;
+      padding-right: 10px;
+    }
+
+    .amazon-servidores {
+      margin: 7px 0px 0px 308px;
+      font-size: 11px;
+      width: 68px;
+      height: 24px;
+      background-color: #213576;
+      border-radius: 8px;
+    }
+
+    .grid1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .grid1 .angular {
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
+
+
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 20px;
+      margin-left: 65px;
+      margin-right: 49px;
+    }
+
+    /* FOOTER */
+    footer {
+      height: 76px;
+      display: flex;
+      justify-content: space-between;
+      background: white;
+      padding: 20px;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header>
+      <img src="./image/codigo.png" alt="" style="max-width: 100%;
+      height: auto;">
+      <nav>
+        <ul class="ul">
+          <li><a href="#everybody">Todos</a></li>
+          <li><a href="#frontend">Front-End</a></li>
+          <li><a href="#backend">Back-End</a></li>
+          <li><a href="#servers">Servidores</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="inner-addon">
+        <i class="glyphicon glyphicon-search"></i>
+        <input type="text" class="form-control" placeholder="Buscar" />
+      </div>
+
+      <section class="grid1">
+        <section class="angular">
+          <img class="angular capa1" src="./image/angular.png" alt="">
+          <div class="angular capa2">
+            <div>
+              <button class="front-end">Front end</button>
+              <h1>ANGULAR 9, YA ESTA AQUI!!</h1>
+              <h2>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultricies pellentesque in arcu elementum pharetra facilisi nisl. Quis enim tincidunt cursus viverra non sed ornare. Libero, ipsum consectetur arcu, elit scelerisque odio sit. Pulvinar rutrum ut etiam amet, sagittis.
+              </h2>
+            </div>
+            <div class="autor">
+              <p>Autor: Ronald Ccoa</p>
+              <p>19 / 10 / 2021</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="python">
+          <img class="python-cap1" src="./image/python.png" alt="">
+          <div class="python-cap2">
+            <div>
+              <button class="python-back-end">Back end</button>
+              <h3>Python el lenguaje estrella</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="react">
+          <img class="react-cap1" src="./image/react.png" alt="">
+          <div class="react-cap2">
+            <div>
+              <button class="react-front-end">Front end</button>
+              <h3>React el framework mas rapido</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="amazon">
+          <img class="amazon-cap1" src="./image/amazon.png" alt="">
+          <div class="amazon-cap2">
+            <div>
+              <button class="amazon-servidores">Servidores</button>
+              <h3>Amazon por siempre</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+      </section>
+      <h1 class="todos">TODOS</h1>
+
+
+
+
+      <section class="grid2">
+        <section class="python">
+          <img class="python-cap1" src="./image/python.png" alt="">
+          <div class="python-cap2">
+            <div>
+              <button class="python-back-end">Back end</button>
+              <h3>Python el lenguaje estrella</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="python">
+          <img class="python-cap1" src="./image/python.png" alt="">
+          <div class="python-cap2">
+            <div>
+              <button class="python-back-end">Back end</button>
+              <h3>Python el lenguaje estrella</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="react">
+          <img class="react-cap1" src="./image/react.png" alt="">
+          <div class="react-cap2">
+            <div>
+              <button class="react-front-end">Front end</button>
+              <h3>React el framework mas rapido</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="react">
+          <img class="react-cap1" src="./image/react.png" alt="">
+          <div class="react-cap2">
+            <div>
+              <button class="react-front-end">Front end</button>
+              <h3>React el framework mas rapido</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="amazon">
+          <img class="amazon-cap1" src="./image/amazon.png" alt="">
+          <div class="amazon-cap2">
+            <div>
+              <button class="amazon-servidores">Servidores</button>
+              <h3>Amazon por siempre</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="amazon">
+          <img class="amazon-cap1" src="./image/amazon.png" alt="">
+          <div class="amazon-cap2">
+            <div>
+              <button class="amazon-servidores">Servidores</button>
+              <h3>Amazon por siempre</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+
+        <section class="python">
+          <img class="python-cap1" src="./image/python.png" alt="">
+          <div class="python-cap2">
+            <div>
+              <button class="python-back-end">Back end</button>
+              <h3>Python el lenguaje estrella</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="python">
+          <img class="python-cap1" src="./image/python.png" alt="">
+          <div class="python-cap2">
+            <div>
+              <button class="python-back-end">Back end</button>
+              <h3>Python el lenguaje estrella</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="react">
+          <img class="react-cap1" src="./image/react.png" alt="">
+          <div class="react-cap2">
+            <div>
+              <button class="react-front-end">Front end</button>
+              <h3>React el framework mas rapido</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="react">
+          <img class="react-cap1" src="./image/react.png" alt="">
+          <div class="react-cap2">
+            <div>
+              <button class="react-front-end">Front end</button>
+              <h3>React el framework mas rapido</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="amazon">
+          <img class="amazon-cap1" src="./image/amazon.png" alt="">
+          <div class="amazon-cap2">
+            <div>
+              <button class="amazon-servidores">Servidores</button>
+              <h3>Amazon por siempre</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+        <section class="amazon">
+          <img class="amazon-cap1" src="./image/amazon.png" alt="">
+          <div class="amazon-cap2">
+            <div>
+              <button class="amazon-servidores">Servidores</button>
+              <h3>Amazon por siempre</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices feugiat vitae commodo consequat ipsum.
+              </p>
+            </div>
+        </section>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Todos los derechos reservados 2021</p>
+      <img src="./image/codigo.png" alt="" style="max-width: 100%;
+      height: auto;">
+    </footer>
+  </div>
+</body>
+
+</html>
