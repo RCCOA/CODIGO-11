@@ -1,0 +1,19 @@
+$bg-color:#000;
+$bg-div: #db1;
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: $bg-color;
+}
+
+div {
+  color: $bg-div;
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 23px;
+}

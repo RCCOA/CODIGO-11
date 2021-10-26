@@ -1,0 +1,175 @@
+
+/* SELECTORES GLOBALES */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #fff;
+    font-size: 13px;
+    font-family: arial;
+    width: 960px;
+    margin: auto;
+}
+h1{
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    padding-top: 45px;
+}
+h2{
+    font-size: 36px;
+    color: #fff;
+    padding-top: 27px;
+
+}
+
+
+.hola {
+    width: 327px;
+    height: 84px;
+    padding: 16px 22px 17px 16px;
+    background-color: #7299FE;
+    backface-visibility: hidden;
+    opacity: 0.5;
+    margin: 169px 545px 192px 50px;
+}
+/* HEADER */
+header{
+    background: #00AAB5;
+    text-align: center;
+    padding: 20px;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    color: white;
+    font-size: 14px;
+    text-decoration:wavy;
+    padding: 10px;
+}
+
+header p {
+  color: white;
+  font-size: 21px;
+  align-self: center;
+
+}
+ header ul {
+  display: flex ;
+  justify-content: space-between;
+ }
+
+ header div {
+  display: flex ;
+  align-items: center;
+
+ }
+
+header .header-logo{
+    font-size: 64px;
+    text-decoration: none;
+
+    display: block;
+}
+/* FONDO */
+.fondo {
+  background-image: url("../images/portafolio.png");
+  width: 960px;
+  height: 525px;
+}
+
+
+
+/* MY SKILLS */
+.my-skills {
+    background: #7299FE;
+    width: 960px;
+    height: 424px;
+  }
+.my-skills h2{
+    color: #B508A3;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+ }
+
+.my-skills h3 {
+  color: white;
+  padding: 23px 0px 5px 0px;
+  font-size: 18px;
+}
+
+.skills {
+  text-align: right;
+  color: white;
+  height: 17px;
+  border-radius: 5px;
+
+
+}
+.container {
+  width: 364px;
+  height: 17px;
+  background-color: #ddd;
+  border-radius: 5px;
+
+}
+
+.html {width: 90%; background-color: #000000;}
+.css {width: 80%; background-color: #000000;}
+.angular {width: 65%; background-color: #000000;}
+.figma {width: 60%; background-color: #000000;}
+.javascript {width: 85%; background-color: #000000;}
+.react {width: 58%; background-color: #000000;}
+.python {width: 95%; background-color: #000000;}
+.node-js {width: 50%; background-color: #000000;}
+
+
+.parte2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 27px 104px 86px 104px;
+}
+
+/* SERVICES */
+.services{
+  background: #FB7171;
+  width: 960px;
+  height: 424px;
+}
+
+.services-3 {
+  display: flex;
+  justify-content: center;
+  width: 750px;
+  height: 250px;
+  margin: 35px 105px 76px 105px;
+}
+
+
+
+.parte3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 50px;
+
+}
+
+.parte3 div {
+  text-align: center;
+  padding: 15px 0px 20px 0px;
+}
+
+.parte3 p {
+  font-size: 24px;
+  padding-top: 15px;
+}
+.services h2{
+  color: #00CC9B;
+  text-align: center;
+  font-weight: bold;
+}

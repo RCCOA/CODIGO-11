@@ -11,36 +11,53 @@
 
   <style>
     body {
-      margin: 0;
+      margin: auto;
       height: 1453;
       width: 1024;
       max-width: 1024px;
       font-family: arial;
       font-style: bold;
-      background-color: coral;
+      background-color:white;
+      justify-content:center;
+      background-color:white;
     }
+
+    .wrapper {
+      background-color: lightblue;
+    }
+
 
     /*HEADER*/
     header {
       display: flex;
       justify-content: space-between;
       background: white;
-      padding: 20px;
+      padding: 10px 20px 10px 20px;
+      align-items: center;
+      /* background-color: lightgreen; */
+    }
+
+    .centro{
+      text-align: center;
     }
     .ul {
+      border: 10px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       list-style: none;
+
     }
 
     header a {
-      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      padding: 5px 10px 0px 10px;
       text-decoration: none;
       max-width: 100%;
       height: auto;
-      color:black;
+      color: #242A59;
       cursor: pointer;
-      text-align: center;
+
       }
 
     /*BUSCADOR*/
@@ -58,7 +75,7 @@
 
     /* MAIN*/
     main {
-      padding: 20px 52px 20px 52px;
+      padding: 15px 52px 15px 52px;
     }
 
     .angular {
@@ -116,6 +133,14 @@
     p {
       font-size: 11px;
       margin-top: 10px;
+    }
+
+
+    hr {
+      margin: 2px 0px 2px 0px ;
+      height: 2px;
+      background-color: gray;
+      box-shadow: 0px 1px 1px gray;
     }
 
     .todos {
@@ -242,7 +267,8 @@
       display: flex;
       justify-content: space-between;
       background: white;
-      padding: 20px;
+      padding: 0px 20px 0px 20px;
+      align-items: center;
     }
 
 
@@ -256,16 +282,16 @@
     <header>
       <img src="./image/codigo.png" alt="" style="max-width: 100%;
       height: auto;">
-      <nav>
+      <nav class="centro">
         <ul class="ul">
-          <li><a href="#everybody">Todos</a></li>
-          <li><a href="#frontend">Front-End</a></li>
-          <li><a href="#backend">Back-End</a></li>
-          <li><a href="#servers">Servidores</a></li>
+          <li><a href="#everybody"><b>Todos</b></a></li>
+          <li><a href="#frontend"><b>Front-End</b></a></li>
+          <li><a href="#backend"><b>Back-End</b></a></li>
+          <li><a href="#servers"><b>Servidores</b></a></li>
         </ul>
       </nav>
     </header>
-
+    <hr>
     <main>
 
       <div class="inner-addon">
@@ -481,7 +507,7 @@
       </section>
 
     </main>
-
+      <hr>
     <footer>
       <p>Todos los derechos reservados 2021</p>
       <img src="./image/codigo.png" alt="" style="max-width: 100%;
