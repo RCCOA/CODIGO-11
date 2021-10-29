@@ -251,6 +251,8 @@ header .header-logo{
   width: 759px;
   height: 112px;
   padding: 20px 0px 0px 0px;
+  background-color: white;
+  font-family: arial;
 }
 .contact button {
   width: 167px;
@@ -277,6 +279,10 @@ header .header-logo{
   gap: 32px;
   margin-bottom: 33px;
   box-sizing: border-box;
+}
+
+.label input {
+  background-color: white;
 }
 
 /*FOOTER*/
