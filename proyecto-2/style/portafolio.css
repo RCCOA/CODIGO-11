@@ -1,8 +1,8 @@
 
 /* SELECTORES GLOBALES */
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -11,49 +11,51 @@
 }
 
 body{
-    color: #fff;
-    font-size: 13px;
-    font-family: arial;
-    width: 960px;
-    margin: auto;
+  color: #fff;
+  font-size: 13px;
+  font-family: arial;
+  width: 960px;
+  margin: auto;
 }
+
 h1{
-    font-size: 64px;
-    color: #fff;
-    text-align: center;
-    padding-top: 45px;
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+  padding-top: 45px;
 }
+
 h2{
-    font-size: 36px;
-    color: #fff;
-    padding-top: 27px;
-
+  font-size: 36px;
+  color: #fff;
+  padding-top: 27px;
 }
-
 
 .hola {
-    width: 327px;
-    height: 84px;
-    padding: 16px 22px 17px 16px;
-    background-color: #7299FE;
-    backface-visibility: hidden;
-    opacity: 0.5;
-    margin: 169px 545px 192px 50px;
+  width: 327px;
+  height: 84px;
+  padding: 16px 22px 17px 16px;
+  background-color: #7299FE;
+  backface-visibility: hidden;
+  opacity: 0.5;
+  margin
+  : 169px 545px 192px 50px;
 }
 /* HEADER */
 header{
-    background: #00AAB5;
-    text-align: center;
-    padding: 20px;
-    display: flex ;
-    justify-content: space-between;
-    align-items: center;
+  background: #00AAB5;
+  text-align: center;
+  padding: 20px;
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
 }
+
 header a{
-    color: white;
-    font-size: 14px;
-    text-decoration:wavy;
-    padding: 10px;
+  color: white;
+  font-size: 14px;
+  text-decoration:wavy;
+  padding: 10px;
 }
 
 header p {
@@ -62,23 +64,23 @@ header p {
   align-self: center;
 
 }
- header ul {
+
+header ul {
   display: flex ;
   justify-content: space-between;
- }
+}
 
- header div {
+header div {
   display: flex ;
   align-items: center;
-
- }
+}
 
 header .header-logo{
-    font-size: 64px;
-    text-decoration: none;
-
-    display: block;
+  font-size: 64px;
+  text-decoration: none;
+  display: block;
 }
+
 /* FONDO */
 .fondo {
   background-image: url("../images/portafolio.png");
@@ -87,19 +89,19 @@ header .header-logo{
 }
 
 
-
 /* MY SKILLS */
 .my-skills {
-    background: #7299FE;
-    width: 960px;
-    height: 424px;
-  }
+  background: #7299FE;
+  width: 960px;
+  height: 424px;
+}
+
 .my-skills h2{
-    color: #B508A3;
-    padding-bottom: 10px;
-    text-align: center;
-    font-weight: bold;
- }
+  color: #B508A3;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
 
 .my-skills h3 {
   color: white;
@@ -112,9 +114,8 @@ header .header-logo{
   color: white;
   height: 17px;
   border-radius: 5px;
-
-
 }
+
 .contains {
   width: 364px;
   height: 17px;
@@ -154,25 +155,23 @@ header .header-logo{
   margin: 35px 105px 76px 105px;
 }
 
-
-
 .parte3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   column-gap: 50px;
-
 }
 
 .parte3 div {
-  text-align: center;
-  padding: 15px 0px 20px 0px;
+text-align: center;
+padding: 15px 0px 20px 0px;
 }
 
 .parte3 p {
   font-size: 24px;
   padding-top: 15px;
 }
+
 .services h2{
   color: #00CC9B;
   text-align: center;
@@ -180,7 +179,6 @@ header .header-logo{
 }
 
 /* BRIEFCASE */
-
 .briefcase{
   background: #FFD233;
   width: 960px;
@@ -209,7 +207,6 @@ header .header-logo{
 
 
 /* CUSTOMER */
-
 .customer{
   background: #3F4E62;
   width: 960px;
@@ -229,7 +226,6 @@ header .header-logo{
 }
 
 /* CONTACT */
-
 .contact{
   background: #16A085;
   width: 960px;
@@ -286,7 +282,6 @@ header .header-logo{
 
 
 /*FOOTER*/
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -297,8 +292,8 @@ footer {
 }
 
 footer p {
-margin: 15px;
-font-size: 16px;
+  margin: 15px;
+  font-size: 16px;
 }
 
 
@@ -384,7 +379,6 @@ font-size: 16px;
   .contact{
     width: auto;
     height: auto;
-
   }
 
   .parte6 {
@@ -409,4 +403,3 @@ font-size: 16px;
     margin: 20px;
   }
 }
-
