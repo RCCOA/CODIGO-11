@@ -21,8 +21,8 @@
     header {
       background-color:  #5500C1;
       color: white;
-      font-size: 2.2vw;
-      margin: 2vw 0 1vw;
+      font-size: 2vw;
+      margin: 0;
       padding: 2vw;
     }
 
@@ -30,13 +30,14 @@
 
     main {
       align-items: center;
-      padding: 1vw 29.4vw 1vw 29.4vw ;
+      padding: 0.1vw 18vw 0.1vw 18vw ;
     }
 
     .forma{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      gap: 1vw;
     }
 
     form input {
@@ -45,6 +46,7 @@
       transition: all .5s ease;
       border-radius: 0.8vw;
       border: 1px solid #cacaca;
+      font-size: 1vw;
     }
 
     form input:focus {
@@ -58,7 +60,6 @@
 
     form div {
       padding: 1vw;
-
     }
 
     body button {
@@ -67,6 +68,9 @@
       background: #5500C1 ;
       color: white;
       border: 0.1vw solid #5500C1;
+      border-radius: 0.8vw;
+      margin-top: 2vw;
+      font-size: 1.5vw;
     }
 
     body div {
@@ -76,9 +80,10 @@
 
     h1 {
       text-align:start;
+      font-size: 2vw;
       margin: 2vw 0 1vw;
       color: #009B9B;
-      padding: 2vw;
+      padding: 2vw 0 2vw 0;
     }
 
     /*FOOTER*/
@@ -182,7 +187,7 @@
           <input class="js_direction" type="text" placeholder="Dirección" autocomplete="nope" required>
         </div>
         <div>
-          <input class="js_photo" type="text" placeholder="URL FOTOGRAFIA" autocomplete="nope" required>
+          <input class="js_photo" type="text" placeholder="Url fotografia" autocomplete="nope" required>
         </div>
         <div>
           <input class="js_alias" type="text" placeholder="Alias" autocomplete="nope" required>
