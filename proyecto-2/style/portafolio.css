@@ -8,7 +8,7 @@
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   padding: 10px;
   box-sizing:border-box;
   font-family: arial;
@@ -110,16 +110,17 @@ header div {
 }
 
 .fondo .texto2 {
-  font-size: 1.8vw;
+  font-size: 2.3vw;
+  line-height : 3.5vw;
   color: #fff;
   background-color: #7299FE;
   backface-visibility: hidden;
   opacity: 0.5;
-  width: 35%;
-  height: auto;
-  padding: 20px;
+  width: 39vw;
+  height: 9.5vw;
+  padding: 1.2vw;
   bottom: 15.1vw;
-  left: 2.8vw;
+  left: 2.6vw;
   border-radius: 0.5vw;
 }
 /* .fondo {
@@ -146,8 +147,8 @@ header div {
 
 .my-skills h2{
   color: #B508A3;
-  font-size: 3.8vw;
-  padding: 0.8vw;
+  font-size: 4.5vw;
+  padding: 1.5vw;
   text-align: center;
   font-weight: bold;
   box-sizing:border-box;
@@ -227,8 +228,8 @@ padding: 1.5vw 0vw 2.0vw 0vw;
 
 .services h2{
   color: #00CC9B;
-  font-size: 3.8vw;
-  padding: 0.8vw;
+  font-size: 4.5vw;
+  padding: 1.5vw;
   text-align: center;
   font-weight: bold;
   box-sizing:border-box;
@@ -248,8 +249,8 @@ padding: 1.5vw 0vw 2.0vw 0vw;
 
 .briefcase h2{
   color: #8402A5;
-  font-size: 3.8vw;
-  padding: 0.8vw;
+  font-size: 4.5vw;
+  padding: 1.5vw;
   text-align: center;
   font-weight: bold;
   box-sizing:border-box;
@@ -290,8 +291,8 @@ padding: 1.5vw 0vw 2.0vw 0vw;
 
 .customer h2{
   color: #FF00C7;
-  font-size: 3.8vw;
-  padding: 0.8vw;
+  font-size: 4.5vw;
+  padding: 1.5vw;
   text-align: center;
   font-weight: bold;
   box-sizing:border-box;
@@ -328,8 +329,8 @@ padding: 1.5vw 0vw 2.0vw 0vw;
 
 .contact h2{
   color: #CEE000;
-  font-size: 3.8vw;
-  padding: 0.8vw;
+  font-size: 4.5vw;
+  padding: 1.5vw;
   text-align: center;
   font-weight: bold;
   box-sizing:border-box;
@@ -409,12 +410,11 @@ footer p {
 }
 
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:375px) {
   .container {
     width:100%;
     height: auto;
   }
-
 
   /*FONDO*/
   .fondo .texto2 {
@@ -435,6 +435,11 @@ footer p {
     width: 100%;
     height: auto;
   }
+
+  .my-skills h2 {
+    font-size: 6.5vw;
+    padding-top: 4.5vw;
+    }
 
   .parte2 {
     height: auto;
@@ -457,6 +462,11 @@ footer p {
     height: auto;
     margin: auto;
   }
+
+  .services h2 {
+    font-size: 6.5vw;
+    padding-top: 4.5vw;
+    }
 
   .parte3 {
     display: flex;
@@ -488,7 +498,8 @@ footer p {
     padding: 1.5vw;
   }
   .briefcase h2{
-    padding: auto;
+    font-size: 6.5vw;
+    padding-top: 4.5vw;
   }
 
   .parte4 img {
@@ -502,6 +513,11 @@ footer p {
     width: auto;
     height: auto;
   }
+
+  .customer h2 {
+    font-size: 6.5vw;
+    padding-top: 4.5vw;
+    }
 
   .parte5 {
     display: flex;
@@ -521,6 +537,11 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
+
+  .contact h2 {
+    font-size: 6.5vw;
+    padding-top: 4.5vw;
+    }
 
   .label {
     width: 80%;

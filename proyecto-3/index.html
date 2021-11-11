@@ -4,87 +4,130 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto-3</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/main.css">
 
   <script src="https://kit.fontawesome.com/e18f383c95.js" crossorigin="anonymous"></script>
 
-  <style>
-    body {
-      display: flex;
-      justify-content:space-between;
-      font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-      color:white;
-      font-style: bold;
-
-    }
-
-    .created {
-      background-color: #9017EF;
-      /* width: 436px;
-      height: 121px; */
-    }
-
-    .created div {
-      padding: 46px 33px 47px 32px;
-    }
-
-    .empty {
-      background-color: white;
-      height: 711px;
-    }
-    .followme {
-      background-color: #9017EF;
-      width: 221px;
-      height: 121px;
-    }
-
-    .sig {
-      padding: 14px 108px 79px 17px;
-    }
-
-
-    .icon {
-      display: flex;
-      justify-content:center;
-      margin-left: 80px;
-
-    }
-
-    .fa-twitter,  .fa-facebook {
-      font-size: 48px;
-      padding: 10px;
-    }
-
-
-  </style>
-
 </head>
 <body>
-  <section class="section1">
-    <div class="created">
-      <div>CREADO POR RONALD CCOA</div>
-    </div>
-
-    <div class="empty"></div>
-
-    <div class="followme">
-      <div class="sig">Sigueme
-        <div class="icon">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook"></i>
-        </div>
+  <div class="container">
+    <header>
+      <div class="back-logo">
+        <p class="square1"></p>
+        <p class="square2"></p>
+        <p class="square3"></p>
+        <p class="square4"></p>
+        <img class="logo" src="./images/logo.png">
       </div>
+      <div class="header-detail">
+        <div class="mi">
+          <a href="">Sobre mi</a>
+          <hr>
+        </div>
+        <div class="port">
+          <a href="">Portafolio</a>
+          <hr>
+        </div>
+        <a href="">Servicios</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </div>
+    </header>
+    <main>
+      <section class="introduction">
+        <div class="presentation">
+          <div class="present">
+            <h3>Hola, Hello</h3>
+            <h2>Soy Sebastian Yabiku</h2>
+            <h1>Front end Developer</h1>
+            <div class="thanks">
+              <p>Gracias por visitar mi pagina, en esta encontraras informacion sobre mi, mi experiencia, los servicios que ofrezco, algunas cosas de las que me gusta investigar y podras contactarme y contarme sobre ti.</p>
+            </div>
+            <div class="enlaces">
+              <button>Descargar CV</button>
+              <div class="link">
+                <a href="https://pe.linkedin.com/" target="_blank"><img src="./images/linkedlin.png" alt=""></a>
+                <a href="https://github.com/" target="_blank"><img src="./images/github.png" alt=""></a>
+                <a href="https://codepen.io/" target="_blank"><img src="./images/cubo.png" alt=""></a>
+                <a href="https://outlook.live.com/" target="_blank"><img src="./images/mail.png" alt=""></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="./images/whatsapp.png" alt=""></a>
+              </div>
+            </div>
+          </div>
 
-    </div>
-  </section>
+          <div class="image">
+              <img src="./images/foto.png" alt="">
+          </div>
 
-  <section class="section2">
-    <div class="one"></div>
-  </section>
+          <div class="like">
+            <h3>4.6 mill.</h3>
+            <div class="megusta">
+              <i class="fas fa-check"></i>
+              <p>Me gusta</p>
+            </div>
+            <h4>Compartir</h4>
+            <div class="tweet">
+              <i class="fab fa-twitter"></i>
+              <p> &nbsp; Tweet</p>
+                <!-- <i class="fab fa-facebook"></i> -->
+            </div>
+          </div>
+        </div>
 
+        <div class="angle">
+          <i class="fas fa-angle-down"></i>
+          <!-- <i class="fas fa-angle-double-down"></i> -->
+          <p>Down</p>
+        </div>
+      </section>
+
+      <section class="briefcase">
+        <h2>PORTAFOLIO</h2>
+        <div class="portafolio">
+          <div class="port1">
+            <img src="./images/portafolio1.png" alt=""></a>
+            <div class="port1div">
+              <h3>Web App</h2>
+              <h4>Aplicaciones app para cliente de USA</h3>
+              <div class="ps1">
+                <p>HTML5</p>
+                <p>CSS5</p>
+                <p>SEO</p>
+              </div>
+              <div class="ps2">
+                <p>Javascript</p>
+                <p>Microform</p>
+              </div>
+            </div>
+          </div>
+            <img src="./images/portafolio2.png" alt="">
+          <img src="./images/portafolio3.png" alt="">
+          <img src="./images/portafolio4.png" alt="">
+          <img src="./images/portafolio5.png" alt="">
+          <img src="./images/portafolio6.png" alt="">
+          <img src="./images/portafolio7.png" alt="">
+          <img src="./images/portafolio8.png" alt="">
+        </div>
+      </section>
+
+      <section class="services">
+        <h2>SERVICES</h2>
+      </section>
+
+      <section class="blog">
+        <h2>BLOG</h2>
+      </section>
+
+      <section class="contact">
+        <h2>CONTACT</h2>
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
+  </div>
 </body>
 </html>

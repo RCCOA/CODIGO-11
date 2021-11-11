@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://kit.fontawesome.com/e18f383c95.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 1440px;
+      font-family: arial;
+    }
+    header {
+      background-color:  #5500C1;
+      color: white;
+      font-size: 22px;
+      margin: 20px 0 10px;
+      padding: 20px;
+    }
+
+    /*MAIN*/
+
+    main {
+      align-items: center;
+      padding: 10px 294px 10px 294px ;
+    }
+
+    .forma{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      transition: all .5s ease;
+      border-radius: 8px;
+      border: 1px solid #cacaca;
+    }
+
+    form input:focus {
+      outline: none;
+      box-shadow: 0 0 3px #dadada;
+    }
+
+    form input:focus:required {
+      border-color:rgb(83, 83, 218);
+    }
+
+    form div {
+      padding: 10px;
+
+    }
+
+    body button {
+      width: 226px;
+      padding: 10px;
+      background: #5500C1 ;
+      color: white;
+      border: 1px solid #5500C1;
+    }
+
+    body div {
+      text-align: center;
+      padding: 10px;
+    }
+
+    h1 {
+      text-align:start;
+      margin: 20px 0 10px;
+      color: #009B9B;
+      padding: 20px;
+    }
+
+    /*FOOTER*/
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      background-color:  #5500C1;
+      color: white;
+      font-size: 14px;
+      margin: 20px 0 10px;
+      padding: 20px;
+    }
+
+    /* AGREGAR */
+    .app {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+      border: 1px solid white;
+      margin: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .card {
+      border: 1px solid #cdcdcd;
+      padding: 10px;
+      border-radius: 4px;
+      position: relative;
+      background: white;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 10px rgb(161, 161, 161);
+    }
+
+    .card h2 {
+      font-size: 14px;
+      color: black;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: #5500C1;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .card i {
+      color: #009B9B;
+    }
+
+    .card h2 span {
+      color: red;
+    }
+
+    .card img {
+      width: 147px;
+      height: 147px;
+      border: 5px solid #009B9B;
+      border-radius: 50%;
+    }
+
+    .card button {
+      position: absolute;
+      top:-15px;
+      right: -15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: red;
+      color: white;
+      border: 1px solid red;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <p>AGENDA codiGO</p>
+  </header>
+  <main>
+    <h1>Agregar contacto</h1>
+    <form autocomplete="off">
+      <div class="forma">
+        <div>
+          <input class="js_name" type="text" placeholder="Nombre" autocomplete="nope" required>
+        </div>
+        <div>
+          <input class="js_lastname" type="text" placeholder="Apellido" autocomplete="nope" required>
+        </div>
+        <div>
+          <input class="js_phone" type="tel" placeholder="Telefono" maxlength="9"  autocomplete="nope" required>
+        </div>
+        <div>
+          <input class="js_direction" type="text" placeholder="Dirección" autocomplete="nope" required>
+        </div>
+        <div>
+          <input class="js_photo" type="text" placeholder="URL FOTOGRAFIA" autocomplete="nope" required>
+        </div>
+        <div>
+          <input class="js_alias" type="text" placeholder="Alias" autocomplete="nope" required>
+        </div>
+      </div>
+      <div>
+        <button>ENVIAR</button>
+      </div>
+    </form>
+
+    <div id="app" class="app">
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Todos los Derechos reservados | 2021</p>
+    <p>creado por codiGO</p>
+  </footer>
+
+
+  <script>
+    const inputName = document.querySelector('.js_name');
+    const inputLastname = document.querySelector('.js_lastname');
+    const inputPhone = document.querySelector('.js_phone');
+    const inputDirection = document.querySelector('.js_direction');
+    const inputPhoto = document.querySelector('.js_photo');
+    const inputAlias = document.querySelector('.js_alias');
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const article = document.createElement('article');
+      article.innerHTML = `
+        <figure>
+          <img src=${inputPhoto.value} alt="${inputName.value} ${inputLastname.value}"/>
+        </figure>
+        <h2>${inputName.value} ${inputLastname.value}</h2>
+        <p>${inputAlias.value}</p>
+        <h2><i class="fas fa-phone-alt"></i> &nbsp ${inputPhone.value}</h2>
+        <h2><i class="fas fa-home"></i> &nbsp ${inputDirection.value}</h2>
+
+        <button>X</button>
+      `
+      article.classList.add('card')
+      article.querySelector('button').onclick = function() {
+        const flag = confirm('Estas seguro que deseas eliminar la tarjeta?');
+        if (flag) app.removeChild(article)
+        // if (flag) article.remove()
+      }
+
+      app.appendChild(article)
+
+      this.reset()
+      //console.log('article', article)
+    })
+
+  </script>
+
+</body>
+</html>
