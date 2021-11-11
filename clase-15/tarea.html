@@ -18,12 +18,16 @@
       width: 100%;
       font-family: arial;
     }
+
+    /*HEADER*/
     header {
       background-color:  #5500C1;
       color: white;
       font-size: 2vw;
       margin: 0;
       padding: 2vw;
+      display: flex;
+      justify-content: space-between;
     }
 
     /*MAIN*/
@@ -179,22 +183,67 @@
 
 
     @media screen and (max-width:375px) {
-      .forma{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 1vw;
+
+      /*HEADER*/
+      header {
+        font-size: 3vw;
       }
 
-    .app {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      /*MAIN*/
+      .forma{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2vw;
+      }
 
-    }
+      form input {
+        font-size: 4vw;
+      }
 
-    .card img {
-      width: 50vw;
-      height: 50vw;
-    }
+      body button {
+        width: 100%;
+        font-size: 4vw;
+      }
+
+      h1 {
+        font-size: 5vw;
+      }
+
+      /*FOOTER*/
+      footer {
+        font-size: 2.5vw;
+      }
+
+      /* AGREGAR */
+      .app {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .card h2 {
+        font-size: 3.5vw;
+      }
+
+      .card h3 {
+        font-size: 3vw;
+      }
+
+      .card p {
+      font-size: 3.5vw;
+      }
+
+      .card img {
+        width: 50vw;
+        height: 50vw;
+      }
+
+      .card button {
+        top:-1.5vw;
+        right: 0.8vw;
+        width: 4vw;
+        height: 4vw;
+        font-size: 2vw;
+      }
     }
 
 
@@ -204,6 +253,11 @@
 <body>
   <header>
     <p>AGENDA codiGO</p>
+    <div class="pen">
+      <i class="fas fa-address-book"></i>
+      <i class="fas fa-pencil-alt"></i>
+      <i class="fas fa-user"></i>
+    </div>
   </header>
   <main>
     <h1>Agregar contacto</h1>
@@ -216,13 +270,13 @@
           <input class="js_lastname" type="text" placeholder="Apellido" autocomplete="on" required>
         </div>
         <div>
-          <input class="js_phone" type="tel" placeholder="Telefono" maxlength="9"  autocomplete="on" required>
+          <input class="js_phone" type="tel" placeholder="Teléfono" maxlength="9"  autocomplete="on" required>
         </div>
         <div>
           <input class="js_direction" type="text" placeholder="Dirección" autocomplete="on" required>
         </div>
         <div>
-          <input class="js_photo" type="text" placeholder="Url fotografia" autocomplete="nope" required>
+          <input class="js_photo" type="text" placeholder="URL fotografía" autocomplete="nope" required>
         </div>
         <div>
           <input class="js_alias" type="text" placeholder="Alias" autocomplete="on" required>
@@ -240,7 +294,7 @@
 
   <footer>
     <p>Todos los Derechos reservados | 2021</p>
-    <p>creado por codiGO</p>
+    <p>creado por codiGO : Ronald Ccoa</p>
   </footer>
 
 
