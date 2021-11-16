@@ -286,6 +286,9 @@ header {
 
  /* PORTAFOLIO */
 
+ .briefcase {
+   padding-top: 3vw;
+ }
  .portafolio {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -293,7 +296,7 @@ header {
     column-gap: 3vw;
     row-gap: 2vw;
     box-sizing:border-box;
-    padding: 1vw;
+    padding-top: 3vw;
     color: white;
   }
 
@@ -380,6 +383,11 @@ header {
 
 
   /*SERVICES*/
+
+  .services {
+    padding-top: 3vw;
+  }
+
   .services > h2 {
     padding-top: 3vw;
   }
@@ -442,26 +450,35 @@ header {
 
   /*BLOG*/
 
+  .blog {
+    padding-top: 3vw;
+  }
+
   .texto {
     display: flex;
     justify-content: space-between;
-    height: 40vw;
     box-sizing: border-box;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
+    height: 40hw;
+    padding-top: 3vw;
   }
 
   .texto img {
     border: 0.5vw solid #D1FFA2;
+    background-color: #D1FFA2;
+    height: auto;
   }
 
   .izquierda {
     width: 30%;
-    height: 40vw;
     padding-right:1vw;
+    height: 40hw;
   }
   .izquierda > h2 {
-    font-size: 2.8vw;
+    font-size: 1.8vw;
+    color: black;
+    border-left: 0.4vw solid #C4C4C4;
+    padding:0.5vw;
+    margin-top: 1.5vw;
 
   }
 
@@ -471,36 +488,156 @@ header {
     padding:0.3vw;
   }
 
+  .izquierda p {
+    font-size: 1.5vw;
+    padding: 0.5vw 1.3vw 0.5vw 0vw;
+    font-weight:lighter;
+    line-height : 2.3vw;
+    font-family: Helvetica, Arial, sans-serif;;
+  }
 
-  .texto p {
-    font-size: 1vw;
-    padding: 0.5vw 4vw 0.5vw 0vw;
+  .derecha p {
+    font-size: 1.2vw;
+    padding: 0.5vw 1.3vw 0.5vw 0vw;
     font-weight:normal;
-    line-height : 1.8vw;
+    line-height : 2vw;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .texto a {
+    color: blue;
+    font-size: 1.2vw;
+    font-weight:normal;
+    line-height : 0.1hw;
+    font-family: Helvetica, Arial, sans-serif;
   }
 
   .derecha {
-    /* box-sizing: border-box; */
     width: 70%;
-    /* height: 50%; */
+    height: 40hw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 2vw;
+    gap: 1.5vw;
     padding-left:1vw;
 
   }
-  .derecha > div {
+
+  .css3, .engine {
+    display: flex;
+  }
+
+  .css3 > img, .engine > img {
     height: 19vw;
   }
 
-  .css3 {
-    height: 20vw;
-    display: flex;
-
-    /* height: 50%; */
+  .engine > div {
+    padding-left: 1.1vw;
   }
 
-  .engine > img {
-    height: 50%;
+  .suscrib h4 {
+    font-size: 1.6vw;
+    font-weight:lighter;
+    line-height : 3vw;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .izquierda:hover > img {
+    border: 0.5vw solid #5A0CB0;
+    background-color: #5A0CB0;
+    border-radius: 0.5vw;
+  }
+
+  .izquierda:hover > h2 {
+    border-left: 0.4vw solid #5A0CB0;
+  }
+
+  .izquierda:hover > p > a {
+    color: #5A0CB0;
+    font-weight: bolder;
+  }
+
+  .css3:hover > img {
+    border: 0.5vw solid #5A0CB0;
+    background-color: #5A0CB0;
+    border-radius: 0.5vw;
+  }
+
+  .css3:hover > div >h3 {
+    border-left: 0.4vw solid #5A0CB0;
+  }
+
+  .css3:hover > div > p > a {
+    color: #5A0CB0;
+    font-weight: bolder;
+  }
+
+  .engine:hover > img {
+    border: 0.5vw solid #5A0CB0;
+    background-color: #5A0CB0;
+    border-radius: 0.5vw;
+  }
+
+  .engine:hover > div >h3 {
+    border-left: 0.4vw solid #5A0CB0;
+  }
+
+  .engine:hover > div > p > a {
+    color: #5A0CB0;
+    font-weight: bolder;
+  }
+
+  .animation:hover > img {
+    border: 0.5vw solid #5A0CB0;
+    background-color: #5A0CB0;
+    border-radius: 0.5vw;
+  }
+
+  .animation:hover >h3 {
+    border-left: 0.4vw solid #5A0CB0;
+  }
+
+  .animation:hover > p > a {
+    color: #5A0CB0;
+    font-weight: bolder;
+  }
+
+
+  .suscrib > div {
+    display: flex;
+    height: 5vw;
+    margin-top: 2vw;
+  }
+
+  .email {
+    border-radius: 1vw 0vw 0vw 1vw;
+    border: 0.1vw solid #C4C4C4;
+    font-size: 1.5vw;
+    padding: 1vw;
+  }
+
+  .suscrib > div > button {
+    width: 60%;
+    background-color: #5A0CB0;
+    color: white;
+    border: 0.1vw solid #5A0CB0;
+    border-radius: 0vw 1vw 1vw 0vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+  }
+
+  .suscrib > div > button:hover {
+    background-color: #5A0CB0;
+    color: white;
+    border: 0.2vw solid #1e043a;
+    border-radius: 0vw 1vw 1vw 0vw;
+    font-size: 1.6vw;
+    cursor: pointer;
+    width: 62%;
+  }
+
+  /*CONTACT*/
+
+  .contact {
+    padding-top: 3vw;
   }
