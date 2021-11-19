@@ -108,4 +108,60 @@ const resultado = numeros.reduce((acumulado, valorActual, indice, array) => {
 
 console.log('resultado', resultado);
 
+//OBJECT
+const objeto = {
+  name ='sebastian',
+  lastname= 'yabiku',
+};
 
+const objeto2 = {
+  age: 3,
+  country: 'peru',
+};
+
+const objeto3 = {
+  age: 44,
+  country:'australia',
+};
+
+ //Object.assign = Entrega copias de objetos
+const copia = Object.assign({}, objeto, objeto2, objeto3);
+console.log('copia', copia);
+
+//Object.entries = Entrega coleccion de clave, valor
+console.log('Object.entries', Object.entries(copia));
+
+//Object.keys = Entrega coleccion con las llaves del objeto
+console.log('Object.keys', Object.keys(copia));
+
+//Object.values = Entrega coleccion de valores del objeto
+console.log('Object.values', Object.values(copia));
+
+//Object.keys = Entrega valor booleano si la propiedad existe en el objeto
+console.log('Object.hasOwnProperty', copia.hasOwnProperty('age'));
+
+//NUMBER
+//parseInt
+console.log(Number.parseInt('3.000'));
+
+//parseFloat
+console.log(Number.parseFloat('3.14'));
+
+//toFixed
+console.log(Number.parseFloat('3.14').toFixed(5));
+
+//MATH
+//pow
+console.log(Math.pow(9,2));
+
+//round
+console.log(Math.round(5.5));
+
+
+//DATE
+console.log('getDate',new Date().getDate());
+console.log('getMonth',new Date().getMonth());
+console.log('getDay',new Date().getDay());
+console.log('getHours',new Date().getHours());
+console.log('getMinute',new Date().getMinutes());
+console.log('getSeconds',new Date().getSeconds());

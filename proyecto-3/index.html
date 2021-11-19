@@ -178,23 +178,78 @@
             </div>
             <div class="suscrib">
               <h4>Nos gusta escribir y compartir sobre tecnologia, diseño, tendencias, y muchas cosas mas. Si te gustaria recibir nuestras pubicaciones subscribete </h4>
-              <div>
-                <input class="email" type="email" placeholder="  E-mail" autocomplete="on" required>
+              <form class="form" autocomplete="on">
+                <input class="email" type="email" placeholder="E-mail" autocomplete="on" required>
                 <button type="submit">Suscribete</button>
-              </div>
+              </form>
             </div>
-
-
           </div>
         </div>
       </section>
 
       <section class="contact">
         <h2>CONTACT</h2>
-      </section>
+        <form autocomplete="on">
+          <div class="forma">
+            <div>
+              <input class="name" type="text" placeholder="Nombre" autocomplete="on" required>
+            </div>
+            <div>
+              <input class="phone" type="tel" placeholder="Teléfono" maxlength="9"  autocomplete="on" required>
+            </div>
+            <div>
+              <input class="input" type="text" list="items" placeholder="Tipo de proyecto" autocomplete="on" required>
+              <datalist class="datalist" id="items">
+                <option>Proyectos únicos</option>
+                <option>Proyectos continuos</option>
+                <option>Largo plazo</option>
+                <option>Mediano plazo</option>
+                <option>Corto plazo</option>
+              </datalist>
+            </div>
+            <div>
+              <input class="budget" type="number" list="ppto" placeholder="Presupuesto" autocomplete="nope" min="15000" step="5000" required>
+              <datalist id="ppto">
+                <option>15000</option>
+                <option>25000</option>
+                <option>35000</option>
+                <option>45000</option>
+              </datalist>
+            </div>
+          </div>
+          <div>
+            <textarea class="textarea" name="textarea" placeholder="Cuentanos mas"></textarea>
+          </div>
+          <div class="boton">
+            <button class="button">ENVIAR</button>
+          </div>
+        </form>
 
+      </section>
     </main>
+    <div class="line"></div>
     <footer>
+      <section>
+        <div class="atras-logo">
+          <p class="cuadro1"></p>
+          <p class="cuadro2"></p>
+          <p class="cuadro3"></p>
+          <p class="cuadro4"></p>
+          <img class="el-logo" src="./images/logo.png">
+        </div>
+        <div class="gracias">
+          <p>GRACIAS</p>
+          <p>POR VISITARNOS</p>
+        </div>
+        <div class="link-footer">
+          <a href="https://pe.linkedin.com/" target="_blank"><img src="./images/linkedlin.png" alt=""></a>
+          <a href="https://github.com/" target="_blank"><img src="./images/github.png" alt=""></a>
+          <a href="https://codepen.io/" target="_blank"><img src="./images/cubo.png" alt=""></a>
+          <a href="https://outlook.live.com/" target="_blank"><img src="./images/mail.png" alt=""></a>
+          <a href="https://web.whatsapp.com/" target="_blank"><img src="./images/whatsapp.png" alt=""></a>
+        </div>
+
+      </section>
 
     </footer>
   </div>
