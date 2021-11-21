@@ -83,6 +83,8 @@ header {
 
 .header-detail a {
   text-decoration:none;
+  padding: 0.5vw;
+  width: 80%;
 }
 
 .logo {
@@ -126,6 +128,7 @@ header {
 
 .header-detail a:hover {
   color: red;
+  border-bottom: 0.2vw solid #6D0AD3;
 }
 
 /*MAIN*/
@@ -739,6 +742,7 @@ main{
     border: 0.2vw solid #1e043a;
     font-size: 2.1vw;
     transition: 0.5s;
+    cursor: pointer;
   }
   .button:active { /* Al presionarse el botón */
     text-shadow: 1px 1px rgba(0,0,0,.3);  /* Sombra del texto */
@@ -828,7 +832,48 @@ main{
     align-items: center;
   }
 
-    .link-footer > a {
+  .link-footer > a {
       width: 2.5vw;
       height: 2.5vw;
-    }
+  }
+
+  .footer-detail {
+    display: flex;
+    text-align: center;
+    padding: 0vw 21vw;
+    margin-top: 1.5vw;
+  }
+
+  .footer-detail a {
+    padding: 0vw 1vw;
+    text-decoration:none;
+    color: black;
+    font-size: 1.3vw;
+    font-weight: lighter;
+  }
+
+  .footer-detail a:hover {
+    padding: 0vw 1vw;
+    text-decoration:none;
+    color: #6D0AD3;
+    font-weight:bold;
+    border-bottom: 0.3vw solid #6D0AD3;
+  }
+
+ /* .fas .fa-heart {
+    display: inline;
+  } */
+
+  .lima {
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .lima > img {
+    background-color: white;
+    width: 1.1vw;
+    height: 1.1vw;
+    color: red;
+  }

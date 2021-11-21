@@ -7,22 +7,22 @@
       "age": "34"
     },
     {
-      "name": "angel",
-      "lastname": "farfan",
+      "name": "jose",
+      "lastname": "espinoza",
       "age": "23",
-      "id": 2
+      "id": 6
     },
     {
-      "name": "LUIS",
-      "lastname": "farfan",
-      "age": "23",
-      "id": 3
+      "name": "luis",
+      "lastname": "carlos",
+      "age": "12",
+      "id": 7
     },
     {
-      "name": "LUIS",
-      "lastname": "farfan",
-      "age": "23",
-      "id": 4
+      "name": "juan",
+      "lastname": "sintierra",
+      "age": "21",
+      "id": 8
     }
   ],
   "profesores": [

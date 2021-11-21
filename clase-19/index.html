@@ -17,7 +17,7 @@
     </ul>
   </nav>
   <div class="box">
-    <h1>REGISTRAR EL ALUMNO</h1>
+    <h1>REGISTRAR ALUMNOS</h1>
     <form method="POST" onSubmit="return false;">
       <div>
         <input class="js_name" type="text" placeholder="Nombre" required>
@@ -33,38 +33,7 @@
       </div>
     </form>
   </div>
-  <script>
-
-    function registerAlumn() {
-      const name = document.querySelector('.js_name')
-      const lastname = document.querySelector('.js_lastname')
-      const age = document.querySelector('.js_age')
-      const form = document.querySelector('form')
-
-      form.addEventListener('submit', function (e) {
-        e.preventDefault()
-        const body = {
-          name: name.value,
-          lastname: lastname.value,
-          age: age.value
-        }
-
-        fetch('http://localhost:3000/alumnnos', {
-          method: 'POST',
-          body: JSON.stringify(body),
-          headers: {
-            "Content-type": "application/json; charset=UTF-8"
-          }
-        }).then((response) => {
-          return response.json()
-        }).then((response) => {
-          console.log('response')
-        })
-      })
-    }
-
-    registerAlumn()
-
+  <script src="./js/register.js">
   </script>
 </body>
 
