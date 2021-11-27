@@ -131,7 +131,7 @@ body {
   .container h1 {
     -webkit-text-stroke: 0.5vw #f87b55;
     font-size: 8vw;
-    padding-top: 30vw;
+    padding-top: 26vw;
   }
 
   .container h2 {
@@ -141,8 +141,8 @@ body {
 
   .container > input {
     width: 50vw;
-    height: 5vw;
-    font-size: 8vw;
+    height: 10vw;
+    font-size: 6vw;
     margin: 0vw 15vw;
     border-bottom: 0.5vw solid white;
   }

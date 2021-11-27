@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* .row div:first-child {
+
+} */
+
+.row div {
+  width: 100%;
+}
+
+.row input[type='text'],
+.row select {
+  width: 100%;
+  padding: 10px;
+}
